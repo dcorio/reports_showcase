@@ -15,9 +15,9 @@ function subst() {
     var test_first_page = document.getElementById('test_first_page');
     var test_not_first_page = document.getElementById('test_not_first_page');
     if (vars['page'] == 1) {
-        test_not_first_page.style.display = 'none';
+	test_not_first_page.parentNode.removeChild(test_not_first_page);
     }
     else {
-        test_first_page.style.display = 'none';
+	test_first_page.parentNode.removeChild(test_first_page);
     }
 }
