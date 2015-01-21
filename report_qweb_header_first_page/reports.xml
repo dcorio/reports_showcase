@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+    <template id="test_header" inherit_id="report.external_layout_header">
+        <xpath expr="//div[@class='header']" position="inside">
+            <span id="test_first_page">*** FIRST PAGE ***</span>
+            <span id="test_not_first_page">*** NOT FIRST PAGE ***</span>
+        </xpath>
+    </template>
+</data>
+</openerp>
